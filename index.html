@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>プライバシーポリシー | PokeFeed</title>
+  <title>サポート & プライバシーポリシー | PokeFeed</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -20,6 +20,21 @@
     }
     header h1 { font-size: 24px; font-weight: 700; }
     header p  { font-size: 14px; opacity: 0.85; margin-top: 4px; }
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      padding: 12px 24px;
+    }
+    nav a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #A29610;
+      text-decoration: none;
+    }
+    nav a:hover { text-decoration: underline; }
     main {
       max-width: 720px;
       margin: 40px auto;
@@ -34,11 +49,41 @@
       padding-left: 12px;
       margin-bottom: 12px;
     }
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #333;
+      margin: 16px 0 6px;
+    }
     p, li { font-size: 15px; color: #333; }
     ul { padding-left: 20px; }
     li { margin-bottom: 6px; }
     a { color: #A29610; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+    .button {
+      display: inline-block;
+      background: #A29610;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 24px;
+      border-radius: 8px;
+      margin-top: 12px;
+      text-decoration: none;
+    }
+    .button:hover { opacity: 0.85; text-decoration: none; }
+    .divider {
+      border: none;
+      border-top: 2px solid #e0e0e0;
+      margin: 48px 0;
+    }
     footer {
       text-align: center;
       font-size: 13px;
@@ -51,12 +96,62 @@
 <body>
 
 <header>
-  <h1>プライバシーポリシー</h1>
-  <p>PokeFeed</p>
+  <h1>PokeFeed</h1>
+  <p>サポート & プライバシーポリシー</p>
 </header>
 
+<nav>
+  <a href="#support">サポート</a>
+  <a href="#faq">よくある質問</a>
+  <a href="#privacy">プライバシーポリシー</a>
+</nav>
+
 <main>
-  <section>
+
+  <!-- サポート -->
+  <section id="support">
+    <h2>サポート</h2>
+    <div class="card">
+      <p>PokeFeed に関するご質問・不具合報告は GitHub Issues よりお送りください。日本語・英語どちらでも対応しています。</p>
+      <a class="button" href="https://github.com/yujifujimatsu/PokeFeed/issues" target="_blank">お問い合わせ・不具合報告</a>
+    </div>
+  </section>
+
+  <!-- よくある質問 -->
+  <section id="faq">
+    <h2>よくある質問</h2>
+
+    <div class="card">
+      <h3>記事が表示されません</h3>
+      <p>通信環境をご確認の上、画面を下に引いて更新してください。初回起動時は記事の読み込みに数秒かかる場合があります。</p>
+    </div>
+
+    <div class="card">
+      <h3>特定のソースの記事が見たい / 非表示にしたい</h3>
+      <p>設定画面（右下のギアアイコン）→「ニュースソース」から各ソースの表示・非表示を切り替えられます。</p>
+    </div>
+
+    <div class="card">
+      <h3>ウィジェットが更新されません</h3>
+      <p>ウィジェットはアプリを起動して記事を読み込んだ後、最大30分で更新されます。アプリを一度起動してから少し時間をおいてご確認ください。</p>
+    </div>
+
+    <div class="card">
+      <h3>広告を非表示にしたい</h3>
+      <p>設定画面から広告の非表示オプションをご利用いただけます。</p>
+    </div>
+
+    <div class="card">
+      <h3>このアプリは公式アプリですか？</h3>
+      <p>本アプリはポケモンカードゲームの非公式ニュースアグリゲーターです。The Pokémon Company とは一切関係ありません。</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- プライバシーポリシー -->
+  <section id="privacy">
+    <h2>プライバシーポリシー</h2>
     <p>本プライバシーポリシーは、PokeFeed（以下「本アプリ」）におけるユーザー情報の取り扱いについて説明します。</p>
   </section>
 
@@ -104,8 +199,9 @@
   </section>
 
   <section>
-    <p style="color:#999; font-size:13px;">最終更新日：2026年6月30日</p>
+    <p style="color:#999; font-size:13px;">最終更新日：2026年7月6日</p>
   </section>
+
 </main>
 
 <footer>
